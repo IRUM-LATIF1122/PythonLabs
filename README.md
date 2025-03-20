@@ -6,9 +6,6 @@ This repository contains my first Python lab, covering fundamental concepts like
 - **Comments**: How to write comments in Python using `#`.  
 - **Input/Output**: Using `input()` to take input and `print()` to display output.  
 - **Data Types**: Introduction to integers, floats, complex numbers, strings, and booleans.  
-- **Special Characters**: Using escape characters like `\n` (new line), `\t` (tab), `\\` (backslash), `\"` (double quotes), and `\'` (single quotes).  
-- **String Operations**: Indexing and accessing elements in strings.  
-- **String Slicing**: Extracting substrings using positive and negative indices.  
 - **List Operations**: Creating and printing lists with different data types.  
 - **List Slicing**: Extracting sublists and reversing lists using slicing.
 
