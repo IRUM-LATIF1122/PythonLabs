@@ -80,6 +80,24 @@ print(type(str2))
 # str3 = (" hope you are ok ')  # Starts with double, ends with single quote (Syntax Error)
 # str4 = ("'hello '")  # Single quote within double quotes (Correct)
 
+# TYPE 3: BOOLEAN
+# The simplest built-in type in Python is bool, representing True or False.
+
+print('\nHere are more type variables and their types:')
+x = True
+print(x)
+print(type(x))
+
+y = False
+print(y)
+print(type(y))
+
+#  Example of boolean in condition
+years_of_experience = 2
+is_eligible = years_of_experience > 1
+print("Is the candidate eligible?", is_eligible)
+print(type(is_eligible))
+
 #   Lists
 # allows you to store a collection of items, which can be of any data type (integers, strings, floats,other lists).
 # mutuable, allow duplicates, ordered

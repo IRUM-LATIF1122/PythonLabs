@@ -32,23 +32,6 @@ print("This is \"double quote\"")
 # \' for single quotes
 print('This is \'single quote\'')
 
-# TYPE 3: BOOLEAN
-# The simplest built-in type in Python is bool, representing True or False.
-
-print('\nHere are more type variables and their types:')
-x = True
-print(x)
-print(type(x))
-
-y = False
-print(y)
-print(type(y))
-
-#  Example of boolean in condition
-years_of_experience = 2
-is_eligible = years_of_experience > 1
-print("Is the candidate eligible?", is_eligible)
-print(type(is_eligible))
 
 #   String indices and accessing string elements
 #   Strings are arrays of characters and elements of an array can be accessed using indexing.
@@ -121,4 +104,21 @@ print(msg)  # although it will display correct but its not good approach
 
 formated_msg  = f'{first_name} [{last_name}] is a coder'
 print(formated_msg)
+
+# Some pre-defined methods about strings to access these methods we use dot(.) operator.......
+
+message = "This file is all about strings in python "
+print(message.upper())
+print(message.lower())
+
+print(message.find('T'))    # this will return index what is written inside ''
+
+print(message.replace('file', 'code file')) # this will replace old with new
+
+#   'in'  keyword in python  it return boolean result lets see
+
+print('This' in message)  # output True
+print('this' in message)    # output False
+
+
 
