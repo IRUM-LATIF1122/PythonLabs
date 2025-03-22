@@ -18,16 +18,7 @@ This repository contains my first Python lab, covering fundamental concepts like
 
 # Python Basics: Arithmetic Operators, Conditional Statements & Logical Operators
 
-## Overview
-This project demonstrates the fundamental concepts of Python, including:
-- Arithmetic Operators
-- Operator Precedence
-- Predefined Functions (round, abs)
-- Conditional Statements
-- Logical Operators
-- A Simple Weight Converter Program
 
-## Contents
 ### 1. Arithmetic Operators
 Python supports the following arithmetic operators:
 - **Addition (`+`)**: Adds two numbers
