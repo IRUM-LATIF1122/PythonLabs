@@ -120,5 +120,12 @@ print(message.replace('file', 'code file')) # this will replace old with new
 print('This' in message)  # output True
 print('this' in message)    # output False
 
+# However, .title() has a limitation: it capitalizes every word based on simple rules, which might not always be ideal for words with apostrophes or special capitalization (e.g., "I'm" becomes "I'M"). For better control, you can use .capitalize() or custom formatting methods.
+
+formated_msg = message.title()
+print(formated_msg)
+
+print(message)
+print(message.capitalize())
 
 
