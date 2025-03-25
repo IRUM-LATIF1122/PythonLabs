@@ -139,3 +139,9 @@ print(numbers[-4:-1])  # Output: [50, 60, 70]
 
 # Reverse the List with Step -1
 print("Reverse list: ",numbers[::-1])   # Output: [80, 70, 60, 50, 40, 30, 20, 10]
+
+# Sorting a list .sort() method sorts orignal list
+fruits = ['banana' , 'cherry' , 'apple', 'strawbery' , 'plum']
+fruits.sort()  # Sorts in ascending order
+# fruits.sort(reverse=True)
+print(fruits)
