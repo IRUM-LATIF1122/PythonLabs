@@ -18,7 +18,6 @@ This repository contains my first Python lab, covering fundamental concepts like
 
 # Python Basics: Arithmetic Operators, Conditional Statements & Logical Operators
 
-
 ### 1. Arithmetic Operators
 Python supports the following arithmetic operators:
 - **Addition (`+`)**: Adds two numbers
@@ -70,7 +69,42 @@ This simple program converts weight between kilograms (`kg`) and pounds (`lbs`):
 - Asks for the unit (`kg` or `lbs`).
 - Converts and displays the weight in the appropriate unit.
 
+# Loops in Python
+### 7. Loops Overview
+Loops allow repeated execution of a block of code:
+- **`for` Loop**: Iterates over a sequence (like a list, tuple, or range).
+- **`while` Loop**: Repeats as long as a condition is `True`.
 
+Examples include iterating over numbers, lists, and using loops for calculations.
+
+### 8. Lists and Tuples
+Lists and tuples store multiple items in a single variable:
+- **Lists**: Mutable, ordered, and allow duplicates.
+- **Tuples**: Immutable, ordered, and allow duplicates.
+
+#### List Operations
+- Accessing elements by index.
+- Finding the maximum number in a list using a loop.
+- Using 2D lists for matrix-like structures.
+- Common list methods: `append()`, `insert()`, `remove()`, `pop()`, `count()`, and `clear()`.
+- Removing duplicates from a list.
+
+#### Tuple Operations
+- Accessing elements.
+- Unpacking tuples into variables.
+- Using `*` to collect remaining values.
+- Looping over tuples.
+
+### 9. Dictionary Basics
+A dictionary stores key-value pairs:
+- **Mutable** and indexed by unique keys.
+- Used for fast data retrieval.
+
+#### Dictionary Operations
+- Creating and accessing elements.
+- Adding new key-value pairs.
+- Using `.get()` to retrieve values safely.
+- Example program: Converting a phone number to words using a dictionary.
 
 ## Author
 This project was created as part of learning Python basics.
