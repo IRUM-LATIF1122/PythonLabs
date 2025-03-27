@@ -63,5 +63,5 @@ def emoji_converter(message):
 
 
 # Taking user input for emoji conversion
-user_message = input('> ')
+user_message = input(' Enter a message > ')
 print(emoji_converter(user_message))
