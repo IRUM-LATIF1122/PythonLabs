@@ -107,12 +107,27 @@ A dictionary stores key-value pairs:
 - Example program: Converting a phone number to words using a dictionary.
   Python Functions Overview
 
-#### Basic function: A simple greeting function.
+#### 9. Functions 
 
 - Function with parameters: Greeting with a name.
 - Positional vs. Keyword Arguments: Shows how function arguments can be passed.
 - Returning values: A function that calculates the area of a rectangle.
 - Emoji Converter: A function that replaces text-based emojis with Unicode emojis.
+
+#### 10 Python Exception Handling
+- Prevents program crashes due to runtime errors.
+- Provides meaningful error messages for better debugging.
+- Ensures controlled execution with a `try-except-finally` structure.
+
+#### How Exception Handling Works
+- **try block**: Contains code that may cause an error.
+- **except blocks**: Catch specific errors like:
+  - `ZeroDivisionError`: Prevents division by zero.
+  - `ValueError`: Ensures valid number input.
+  - Generic `Exception`: Catches unexpected errors.
+- **finally block**: Executes no matter what, ensuring program completion.
+
+  
 
 ## Author
 This project was created as part of learning Python basics.
