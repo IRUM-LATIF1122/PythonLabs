@@ -105,6 +105,14 @@ A dictionary stores key-value pairs:
 - Adding new key-value pairs.
 - Using `.get()` to retrieve values safely.
 - Example program: Converting a phone number to words using a dictionary.
+  Python Functions Overview
+
+#### Basic function: A simple greeting function.
+
+- Function with parameters: Greeting with a name.
+- Positional vs. Keyword Arguments: Shows how function arguments can be passed.
+- Returning values: A function that calculates the area of a rectangle.
+- Emoji Converter: A function that replaces text-based emojis with Unicode emojis.
 
 ## Author
 This project was created as part of learning Python basics.
