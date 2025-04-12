@@ -21,7 +21,7 @@ shape1.shape_info()
 shape2 = Shape('Triangle', 3)
 shape2.shape_info()
 
-# Another example of Class topic
+# Another example of Class topic...........................................................
 class Car:
     def __init__(self, brand, model):
         self.brand = brand  # Attribute
@@ -36,3 +36,16 @@ my_car = Car("Toyota", "Corolla")
 # Accessing attributes and methods
 print(my_car.brand)  # Output: Toyota
 my_car.display_info()  # Output: Car: Toyota Corolla
+
+
+# Another example in which we write destructor ....................
+class Test:
+    def __init__(self, name):
+        self.name = name
+        print(f"{self.name} object created")
+
+    def __del__(self):
+        print(f"{self.name} object deleted")
+
+t1 = Test("Object1")
+del t1  # Manually deleting the object
