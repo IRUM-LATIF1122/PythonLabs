@@ -160,7 +160,7 @@ while True:
     print(line.lower())  # Convert the line to lowercase and print it
 
 #question 13
-# input a string from user and count digits and letters in the string and display
+# input a string from user and count digits and letters in the string and display..
 text = input("Enter a string: ")
 
 letters = 0
