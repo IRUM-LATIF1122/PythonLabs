@@ -127,6 +127,11 @@ A dictionary stores key-value pairs:
   - Generic `Exception`: Catches unexpected errors.
 - **finally block**: Executes no matter what, ensuring program completion.
 
+  #### Lab # 3
+- ** Includes simple python problems and their solutions.
+  #### Clases in python
+  - ** this file covers the basic concepts of clases, constructer, destructor, methods in python. 
+
   
 
 ## Author
