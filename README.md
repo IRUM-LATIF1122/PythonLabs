@@ -128,12 +128,24 @@ A dictionary stores key-value pairs:
 - **finally block**: Executes no matter what, ensuring program completion.
 
   #### Lab # 3
-- ** Includes simple python problems and their solutions.
+- **Includes simple python problems and their solutions.
   #### Clases in python
-  - ** this file covers the basic concepts of clases, constructer, destructor, methods in python. 
-
+  - **this file covers the basic concepts of clases, constructer, destructor, methods in python. 
+#### Stack:
+ - **basic implementation of class Stack using list.
+ - **Stack is a data structure that follows the LIFO (Last In, First Out) principle.
+ - **You push (add) elements to the top of the stack.
+ - **You pop (remove) the most recently added element.
+ - **You can also peek to look at the top item without removing it.
   
+#### Queue:
+- **basic implementation of class Queue using list.
+- **Stack is a data structure that follows the FIFO (First In, First Out) principle.
+- **You enqueue (add) elements to the rear (end) of the queue.
+ - **You dequeue (remove) the  earliest added  element from front.
+ - **You can also peek to look at the front item without removing it.
 
+.
 ## Author
 This project was created as part of learning Python basics.
 
