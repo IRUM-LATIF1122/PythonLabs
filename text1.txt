@@ -1,0 +1,4 @@
+Using 'with' statement
+To simplify file handling and ensure proper closure of files, Python provides the "with" statement.
+It automatically closes the file when operations within the indented block are completed.
+This is considered best practice when working with files.
