@@ -7,10 +7,10 @@ class Graph:
     def add_edge(self, u, v):
         if u not in self.adj_list:
             self.adj_list[u] = []
-        if v not in self.adj_list:
-            self.adj_list[v] = []
+        # if v not in self.adj_list:
+        #     self.adj_list[v] = []
         self.adj_list[u].append(v)
-        self.adj_list[v].append(u)
+        # self.adj_list[v].append(u)
 
     def print_graph(self):
         for node in self.adj_list:
@@ -37,17 +37,24 @@ class Graph:
 # Create graph
 graph = Graph()
 graph.add_edge(0, 1)
-graph.add_edge(0, 2)
+graph.add_edge(0, 4)
 graph.add_edge(1, 2)
-graph.add_edge(2, 0)
-graph.add_edge(1, 2)
+graph.add_edge(1, 0)
+graph.add_edge(1, 4)
+graph.add_edge(1, 3)
 graph.add_edge(2, 3)
-graph.add_edge(3, 3)
+graph.add_edge(2, 1)
+graph.add_edge(3, 1)
+graph.add_edge(3, 2)
+graph.add_edge(3, 4)
+graph.add_edge(4, 1)
+graph.add_edge(4, 3)
+graph.add_edge(4, 0)
 
 print("Adjacency List:")
 graph.print_graph()
 
 print("\nBFS Traversal:")
-graph.BFS(2)
+graph.BFS(3)
 
 

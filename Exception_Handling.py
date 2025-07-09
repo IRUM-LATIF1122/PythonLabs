@@ -29,3 +29,16 @@ finally:
 # The try block contains code that might cause an exception.
 # If an error occurs, the corresponding except block catches the exception and executes custom error-handling code.
 # The program does not crash and continues execution.
+
+
+# using Try- except
+try:
+    # Attempting to divide 10 by 0
+    result = 10 / 0
+except ZeroDivisionError:
+    # Handling the ZeroDivisionError and printing an error message
+    print("Error: Cannot divide by zero")
+# This line will be executed regardless of whether an exception occurred
+print("outside of try and except block")
+
+

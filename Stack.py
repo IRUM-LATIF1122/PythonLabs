@@ -41,7 +41,7 @@ s.push(30)
 s.push("irum")
 s.display()
 
-print("Top Element:", s.peek())
+# print("Top Element:", s.peek())
 print("Popped:", s.pop())
 s.display()
 
