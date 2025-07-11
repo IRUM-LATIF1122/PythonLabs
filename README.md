@@ -145,9 +145,9 @@ A dictionary stores key-value pairs:
  -You dequeue (remove) the  earliest added  element from front.
  -You can also peek to look at the front item without removing it.
 
-# Pandas Practice Project 🐼
+# Pandas Practice File(pandaas_lib.py) 🐼
 
-This repository contains my beginner-level practice code for working with the **Pandas** library in Python. It includes examples and exercises that cover:
+This file contains my beginner-level practice code for working with the **Pandas** library in Python. It includes examples and exercises that cover:
 
 ### ✅ Key Concepts Practiced:
 - Creating and working with **Series**
