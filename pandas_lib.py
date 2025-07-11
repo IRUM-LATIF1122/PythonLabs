@@ -2,9 +2,11 @@
 # # A DataFrame is a two-dimensional, size-mutable, and potentially heterogeneous tabular data structure with labeled axes (rows and columns).
 # # A Series is a one-dimensional labeled array, essentially a single column or row of data.
 #
-# # lets work with series
-#
-# import pandas as pd
+# --------------------------------------------
+# 1. SERIES
+# --------------------------------------------
+
+import pandas as pd
 #  # Create a Series from a list Notice that Pandas automatically assigned numerical indices (0, 1, 2, 3, 4)
 # # to each element, but you can also specify custom labels if needed.
 #
@@ -31,10 +33,13 @@
 # isnull(), notnull(): Check for missing (NaN) or non-missing values.
 # apply(): Apply a custom function to each element of the Series.'''
 #
-# # Now lets see DATAFRAMES
+# --------------------------------------------
+# 2. DATAFRAMES
+# --------------------------------------------
+
 # # DataFrames can be created from dictionaries, with keys as column labels and values as lists representing rows.
-#
-#
+
+
 # # Creating a DataFrame from a dictionary
 # data = {'Name': ['Alice', 'Bob', 'Charlie', 'David'],
 #         'Age': [25, 30, 35, 25],
@@ -59,10 +64,14 @@
 # # To save a DataFrame to a CSV file, use the to_csv method and specify the filename with a “.csv” extension.Pandas provides other functions for saving DataFrames in different formats.
 #
 # df.to_csv('trading_data.csv', index=False)
-#
-#
-# # ---------------------loc() Accesses rows and columns by their labels (names).
+
+
+# --------------------------------------------
+# 3. loc[] and iloc[]
+# --------------------------------------------
+# loc() Accesses rows and columns by their labels (names).
 # # Includes the end index (when slicing).
+
 # df = pd.DataFrame({
 #     'Name': ['Ali', 'Sara', 'Ahmed'],
 #     'Age': [25, 30, 22]
@@ -101,3 +110,84 @@
 # fillna(), drop(), rename(): Handle missing values, drop columns, or rename columns.
 # apply(): Apply a function to each element, row, or column of the DataFrame.'''
 # # -------------------------------------------------
+
+# --------------------------------------------
+# 4. READING CSV AND CLEANING
+# --------------------------------------------
+
+# Lets read a csv file using pandas built in function read_csv()
+# df = pd.read_csv('CSV_data/test.csv')
+# print(df)
+# print(df.head())    # # it will display first 5 rows
+# print(df.tail())# it will display last 5 rows
+# print(df.describe())  # tells some about dat alike min max 25,50,75% , std etc so on
+# print(df.info())        #tell couloum names their counts and their type
+#
+# # DATA SELECTION
+# print('\n\n')
+# print(df[["PassengerId", "Name"]])  # if want to see more than one coloumn pass in list as parameter
+# print(type(df[["PassengerId", "Name"]]))    # tell type of it
+#
+# print('\nlet see what iloc() displays \n',df.iloc[0:3])  # it will display data of 0-2 index (first row)
+
+# # Functions like
+# df = pd.read_csv('CSV_data/copied_data.csv')
+# print(df.head())    # AS their are many NaN means null values null cells
+#
+# # dropna() function will drop the cells that have NaN
+# print(df.dropna())
+
+# Now lets fill NaN cells with some values
+# print(df.fillna(0))
+# print(df.fillna(0 , inplace = True))  # this inplace true isn't good approach bcz it will change orignal data frame
+
+# print(df.rename(columns = {'PassengerId' : 'passengerNumber'}))     # this will rename the column name will not change orignal df
+
+
+# df.info()
+# # lets chane the type of Pclass column
+# df['Age'] = df['Age'].fillna(0).astype(int)     # if col contans NaN values it woulnot be type casted
+# df.info()
+
+
+# # len() to see the length of DF
+# print('length of DF',len(df))
+#
+# --------------------------------------------
+# 5. NEW COLUMNS AND APPLY
+# --------------------------------------------
+
+# #  a new coloumnn  can also be created
+# df['New col'] = [0 for i in range(len(df))]
+# print(df)
+#
+# # a new column can be created plus a function can also be applied on it
+# def fx(a):
+#     return a*a
+#
+#
+# df['Newcol+1'] = df['Age'].apply(fx)    # we created a new col and applied a function on Age col
+# print(df)
+#
+#
+# # Now let save this modified df to new excel sheet
+# df.to_csv("CSV_data/export.csv" , index=False) #if we dont write index false it will create a new coloumn index
+#
+# --------------------------------------------
+# 6. CONCAT & MERGE
+# --------------------------------------------
+
+# # WE can concate two dfs
+# # lets see we have two basic DFs
+# df1 = pd.DataFrame({"name":['Ali','Hamna','Ayesha','Ume-Hani'],
+#                    "Marks":[45,34,44,39]})
+# df2= pd.DataFrame({"name":['Irum', 'Umair'], 'Marks' : [89,89]})
+# print(pd.concat([df1,df2]))
+
+
+# we can merge two data frames too
+df1 = pd.DataFrame({"name":['Ali','Hamna','Ayesha','Ume-Hani'],
+                   "Marks":[45,34,44,39]})
+df2 = pd.DataFrame({"name":['Ali','Hamna','Ayesha','Ume-Hani'],
+                   "Roll no":[1,2,3,4]})
+print(pd.merge(df1,df2, on='name'))
