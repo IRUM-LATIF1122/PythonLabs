@@ -145,7 +145,35 @@ A dictionary stores key-value pairs:
  -You dequeue (remove) the  earliest added  element from front.
  -You can also peek to look at the front item without removing it.
 
-.
+# Pandas Practice Project 🐼
+
+This repository contains my beginner-level practice code for working with the **Pandas** library in Python. It includes examples and exercises that cover:
+
+### ✅ Key Concepts Practiced:
+- Creating and working with **Series**
+- Creating **DataFrames** from dictionaries
+- Selecting and filtering data using `loc[]` and `iloc[]`
+- Reading from and writing to **CSV** files
+- Cleaning data using `dropna()`, `fillna()`, and type casting
+- Creating new columns and using `apply()` with functions
+- Combining data with **concat** and **merge**
+
+---
+
+### 📁 File Structure
+
+| File                 | Description                                 |
+|----------------------|---------------------------------------------|
+| `pandas_practice.py` | The main practice script                    |
+| `CSV_data/`          | Folder for input and output CSV files       |
+
+---
+
+### 🚀 How to Run
+
+1. Make sure you have Python installed (version 3.7+ recommended).
+2. Install pandas:
+
 ## Author
 This project was created as part of learning Python basics.
 
